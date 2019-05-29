@@ -75,8 +75,8 @@ $('#volume').change(function(){
 function showDuration(){
 	$(audio).bind('timeupdate',function(){
 		//Get hours and minutes
-		var s=parseInt(audio.currentTime%60);
-		var m=parseInt((audio.currentTime/60)%60);
+		var s=parseInt(audio.currentTime %60);
+		var m=parseInt((audio.currentTime /60)%60);
 		//Add 0 if seconds less than 10
 		if(s < 10){
 			s ='0' + s;
